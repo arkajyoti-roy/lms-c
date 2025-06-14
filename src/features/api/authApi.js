@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import { userLoggedIn } from '../authSlice';
 // import { l } from 'vite/dist/node/types.d-aGj9QkWt';
 
-const base_url = 'http://localhost:8081/api/v1/user/';
+const base_url = 'https://lms-qi8hh5ymp-arkajyoti-roys-projects.vercel.app/api/v1/user/';
 
 export const authApi = createApi({
     reducerPath: 'authApi',
