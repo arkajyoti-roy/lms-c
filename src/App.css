@@ -1,0 +1,23 @@
+/* From Uiverse.io by andrew-demchenk0 */ 
+.button {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px 8px 16px;
+    gap: 8px;
+    height: 34px; /* Decreased by 3px */
+    width: 122px; /* Decreased by 3px */
+    border: none;
+    background: #0456c8; /* Made it a bit darker */
+    border-radius: 20px;
+    cursor: default; /* Changed to default */
+}
+  
+.lable {
+    margin-top: 1px;
+    font-size: 18px; /* Increased font size */
+    line-height: 19px; /* Adjusted line height */
+    color: #ffffff; /* Changed text color to white */
+    letter-spacing: 1px;
+}

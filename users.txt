@@ -1,0 +1,30 @@
+ const handleUpdateLecture = async () => {
+    const lectureData = {
+      lectureTitle: title,
+      videoInfo: {
+        videoUrl: uploadInfo?.videoUrl,
+        publicId: uploadInfo?.publicId,
+      },
+      isPreviewFree: isFree,
+    };
+
+    console.log('Editing lecture with data:', lectureData);
+    console.log('Course ID:', courseId, 'Lecture ID:', lectureId);
+
+    try {
+      const res = await axios.post(`http://localhost:8081/api/v1/course/${courseId}/lecture/${lectureId}`, lectureData, {
+        withCredentials: true,
+      });
+      console.log('Response:', res.data);
+      toast.success(res.data.message);
+      navigate(`/admin/course/${courseId}/lecture`)
+      // if (res.data.success) {
+      //   toast.success(res.data.message);
+      // } else {
+      //   toast.error('Failed to update lecture');
+      // }
+    } catch (error) {
+      console.error('Error details:', error.response || error.message || error);
+      toast.error('An error occurred while updating the lecture');
+    }
+  };
