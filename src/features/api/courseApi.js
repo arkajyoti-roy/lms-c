@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 // import reducer from "../authSlice";
 
-const base_url = 'https://lms-qi8hh5ymp-arkajyoti-roys-projects.vercel.app/api/v1/course';
+const base_url = 'https://lms-s.onrender.com/api/v1/course';
 
 export const courseApi = createApi({
     reducerPath: "courseApi",
